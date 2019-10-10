@@ -3,26 +3,25 @@
 /**
  3. Log the value of the select and the inputs.
  */
+const calculator = {
+  add(a, b) {
+    return Number(a) + Number(b);
+  },
+  subtract(a, b) {
+    return a - b;
+  },
+  multiply(a, b) {
+    return a * b;
+  },
+  divide(a, b) {
+    return a / b;
+  },
+  remainder(a, b) {
+    return a % b;
+  }
+};
 
-function add(a, b) {
-  return Number(a) + Number(b);
-}
-
-function subtract(a, b) {
-  return a - b;
-}
-
-function multiply(a, b) {
-  return a * b;
-}
-
-function divide(a, b) {
-  return a / b;
-}
-
-function remainder(a, b) {
-  return a % b;
-}
+console.log(calculator.add(1, 5));
 
 const form = document.querySelector("form");
 const num1 = document.querySelector("#num-1");
